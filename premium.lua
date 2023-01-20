@@ -13,7 +13,7 @@ local Window = Rayfield:CreateWindow({
        Invite = "ABCD", -- The Discord invite code, do not include discord.gg/
        RememberJoins = true -- Set this to false to make them join the discord every time they load it up
     },
-    KeySystem = false, -- Set this to true to use our key system
+    KeySystem = true, -- Set this to true to use our key system
     KeySettings = {
        Title = "RobloxHub",
        Subtitle = "Key System",
@@ -55,6 +55,13 @@ local Window = Rayfield:CreateWindow({
     Name = "Noclip",
     Callback = function()
         loadstring(game:HttpGet('https://pastebin.com/raw/6VzGH5sX'))()
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "Fly (K)",
+    Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/qN5VTrh5'))()
     end,
  })
 
